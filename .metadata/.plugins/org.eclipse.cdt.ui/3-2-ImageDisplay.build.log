@@ -1,0 +1,88 @@
+03:43:39 **** Incremental Build of configuration Debug for project 3-2-ImageDisplay ****
+make all 
+'Building file: C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5620M-Resources/SampleCode/Unit3-2/Tic_Tac_Toe.c'
+'Invoking: ARM C Compiler 5'
+armcc --cpu=Cortex-A9.no_neon.no_vfp --arm -I"C:\Users\lin\Documents\GitHub\el21ycl\Workspace\ELEC5620M-Resources\Drivers" -O0 -g --md --depend_format=unix_escaped --no_depend_system_headers -c -o "Tic_Tac_Toe.o" "C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5620M-Resources/SampleCode/Unit3-2/Tic_Tac_Toe.c"
+'Finished building: C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5620M-Resources/SampleCode/Unit3-2/Tic_Tac_Toe.c'
+' '
+'Building target: 3-2-ImageDisplay.axf'
+'Invoking: ARM Linker 5'
+armlink --cpu=Cortex-A9.no_neon.no_vfp --entry=__main --scatter="C:\Users\lin\Documents\GitHub\el21ycl\Workspace\ELEC5620M-Resources\ScatterFiles\DDRRomRam.scat" --info=sizes -o "3-2-ImageDisplay.axf"  ./PrivateTimer/PrivateTimer.o  ./Drivers/VFP_Enable/VFP_Enable.o  ./Drivers/HPS_usleep/HPS_usleep.o  ./Drivers/HPS_IRQ/HPS_IRQ.o  ./Drivers/HPS_I2C/HPS_I2C.o  ./Drivers/FatFS/hwlib/alt_clock_manager.o ./Drivers/FatFS/hwlib/alt_sdmmc.o  ./Drivers/FatFS/diskio_cyclonev.o ./Drivers/FatFS/ff.o ./Drivers/FatFS/ffsystem.o ./Drivers/FatFS/ffunicode.o  ./Drivers/DE1SoC_WM8731/DE1SoC_WM8731.o  ./Drivers/DE1SoC_Servo/DE1SoC_Servo.o  ./Drivers/DE1SoC_Mandelbrot/DE1SoC_Mandelbrot.o  ./Drivers/DE1SoC_LT24/DE1SoC_LT24.o  ./Drivers/BasicFont/BasicFont.o  ./Test.o ./Test_P.o ./Test_Pball.o ./Tic_Tac_Toe.o ./main.o   
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      2084         36         24        378          0       8359   DE1SoC_LT24.o
+       148          8          0          0          0       1373   HPS_usleep.o
+       332          8          0          5          0       3815   PrivateTimer.o
+         0          0     153600          0          0        539   Test.o
+         0          0     153600          0          0        605   Test_P.o
+       312         28          0          0          0       1608   main.o
+
+    ----------------------------------------------------------------------
+      2876         80     307224        388  536870912      16299   Object Totals
+         0          0          0          0  536870912          0   (incl. Generated)
+         0          0          0          5          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         8          0          0          0          0         68   __main.o
+         0          0          0          0          0          0   __rtentry.o
+        12          0          0          0          0          0   __rtentry2.o
+         8          4          0          0          0          0   __rtentry6.o
+       416          0          0          0          0        144   aeabi_sdiv.o
+        18          0          0          0          0         80   exit.o
+         0          0          0          0          0          0   indicate_semi.o
+         2          0          0          0          0          0   libinit.o
+         2          0          0          0          0          0   libinit2.o
+         2          0          0          0          0          0   libshutdown.o
+         2          0          0          0          0          0   libshutdown2.o
+       124          0          0          0          0         96   rt_memcpy_w_ca9.o
+         2          0          0          0          0          0   rtexit.o
+        10          0          0          0          0          0   rtexit2.o
+        12          4          0          0          0         68   sys_exit.o
+         2          0          0          0          0         68   use_no_semi.o
+
+    ----------------------------------------------------------------------
+       624          8          0          0          0        524   Library Totals
+         4          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       620          8          0          0          0        524   c_2.l
+
+    ----------------------------------------------------------------------
+       624          8          0          0          0        524   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      3500         88     307224        388  536870912      16355   Grand Totals
+      3500         88     307224        388  536870912      16355   ELF Image Totals
+      3500         88     307224        388          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)               310724 ( 303.44kB)
+    Total RW  Size (RW Data + ZI Data)         536871300 (524288.38kB)
+    Total ROM Size (Code + RO Data + RW Data)     311112 ( 303.82kB)
+
+==============================================================================
+
+'Finished building target: 3-2-ImageDisplay.axf'
+' '
+
+03:43:41 Build Finished (took 2s.232ms)
+

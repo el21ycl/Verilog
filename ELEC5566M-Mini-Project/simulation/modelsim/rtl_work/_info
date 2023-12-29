@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Mini-Project-el21ycl/simulation/modelsim
+vLT24Display
+Z1 !s110 1653039117
+!i10b 1
+!s100 g0Ml0H`ILV7gf4e]j455d3
+I39jDbWo[?;?@<=aQb8=]52
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1649683337
+Z4 8C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Unit3-el21ycl/3-2-LT24TestProject/LT24Display.v
+Z5 FC:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Unit3-el21ycl/3-2-LT24TestProject/LT24Display.v
+L0 86
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1653039117.000000
+Z8 !s107 C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Unit3-el21ycl/3-2-LT24TestProject/LT24Display.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Unit3-el21ycl/3-2-LT24TestProject|C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Unit3-el21ycl/3-2-LT24TestProject/LT24Display.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Unit3-el21ycl/3-2-LT24TestProject
+Z12 tCvgOpt 0
+n@l@t24@display
+vLT24DisplayInterface
+R1
+!i10b 1
+!s100 S52Fa_]jASRIg5HK3cSR53
+ISmKPS5K>NnKRmkVZco5kU3
+R2
+R0
+R3
+R4
+R5
+L0 409
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@l@t24@display@interface
+vLT24InitialData
+R1
+!i10b 1
+!s100 [PghI>V`k5H`AnPf[RPc_1
+Io2X`=MIg?cAbOIhh3daQ61
+R2
+R0
+R3
+R4
+R5
+L0 523
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@l@t24@initial@data
+vResetSynchroniser
+R1
+!i10b 1
+!s100 g4:GWhz>Y3NIW7bPP@X5E0
+I74Bj8zhRdU=RHKG7`?7A_1
+R2
+R0
+R3
+R4
+R5
+L0 493
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@reset@synchroniser

@@ -1,0 +1,47 @@
+# Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# Reading C:/Users/lin/modelsim.tcl
+# ERROR: No extended dataflow license exists
+# do MiniProject_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Unit3-el21ycl/3-2-LT24TestProject {C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Unit3-el21ycl/3-2-LT24TestProject/LT24Display.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:31:57 on May 20,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Unit3-el21ycl/3-2-LT24TestProject" C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Unit3-el21ycl/3-2-LT24TestProject/LT24Display.v 
+# -- Compiling module LT24Display
+# -- Compiling module LT24DisplayInterface
+# -- Compiling module ResetSynchroniser
+# -- Compiling module LT24InitialData
+# 
+# Top level modules:
+# 	LT24Display
+# End time: 10:31:57 on May 20,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Mini-Project-el21ycl {C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Mini-Project-el21ycl/MiniProject.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:31:58 on May 20,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Mini-Project-el21ycl" C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Mini-Project-el21ycl/MiniProject.v 
+# -- Compiling module MiniProject
+# ** Error: C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Mini-Project-el21ycl/MiniProject.v(133): (vlog-2730) Undefined variable: 'count_one'.
+# ** Error: C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Mini-Project-el21ycl/MiniProject.v(133): (vlog-2730) Undefined variable: 'count_ten'.
+# ** Error (suppressible): C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Mini-Project-el21ycl/MiniProject.v(157): (vlog-2388) 'count_ten' already declared in this scope (MiniProject).
+# ** Error (suppressible): C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Mini-Project-el21ycl/MiniProject.v(158): (vlog-2388) 'count_one' already declared in this scope (MiniProject).
+# ** Error (suppressible): C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Mini-Project-el21ycl/MiniProject.v(220): (vlog-2388) 'ten' already declared in this scope (MiniProject).
+# ** Error (suppressible): C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Mini-Project-el21ycl/MiniProject.v(221): (vlog-2388) 'one' already declared in this scope (MiniProject).
+# ** Error (suppressible): C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Mini-Project-el21ycl/MiniProject.v(232): (vlog-2388) 'High_ten' already declared in this scope (MiniProject).
+# ** Error (suppressible): C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Mini-Project-el21ycl/MiniProject.v(233): (vlog-2388) 'High_one' already declared in this scope (MiniProject).
+# End time: 10:31:58 on May 20,2022, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./MiniProject_run_msim_rtl_verilog.do line 9
+# C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/Users/lin/Documents/GitHub/el21ycl/Workspace/ELEC5566M-Mini-Project-el21ycl {C:/Users/lin/Documents/GitHub/el..."

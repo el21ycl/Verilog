@@ -1,0 +1,36 @@
+/* 
+* Hexadecimal to 7-segment Encoder module declaration 
+*/
+module HexTo7Segment ( //Display the single digit on DE1 board
+  input [8:0] hex ,
+  output reg [6:0] seg7
+   
+ ) ;          
+  
+// When a bit in the output is high, the corresponding LED will be lit.
+      always @(* )             //when hex is active
+      begin
+          seg7 = 7'b0111111;
+          case (hex )            //Assign value according to the value of A
+			                          //gfedcba
+             9'b000000001: seg7 = 7'b1000000; // 0    Seg7
+             9'b000000010: seg7 = 7'b1111001; // 1    - a -
+             9'b000000100: seg7 = 7'b0100100; // 2   |     |
+             9'b000001000: seg7 = 7'b0110000; // 3   f     b
+             9'b000010000: seg7 = 7'b0011001; // 4   |     |
+             9'b000100000: seg7 = 7'b0010010; // 5    - g -
+             9'b001000000: seg7 = 7'b0000010; // 6   |     |
+             9'b010000000: seg7 = 7'b1111000; // 7   e     c
+             9'b100000000: seg7 = 7'b0000000; // 8   |     |
+             9'b000000000: seg7 = 7'b1101111; // 9    - d -
+			    9'b000000000: seg7 = 7'b1110111; // A
+				 9'b000000000: seg7 = 7'b1111100; // b
+				 9'b000000000: seg7 = 7'b1011000; // c
+				 9'b000000000: seg7 = 7'b1011110; // d
+				 9'b000000000: seg7 = 7'b1111001; // E
+				 9'b000000000: seg7 = 7'b1110001; // F
+                  default: seg7 = 7'b0111111;
+          endcase
+      end
+		
+ endmodule  

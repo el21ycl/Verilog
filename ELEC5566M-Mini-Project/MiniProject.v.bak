@@ -1,0 +1,63 @@
+/*
+  Use State Machine to create a Tic Tac Toe Game
+*/
+module MiniProject #(
+   parameter N = 4    //Number of bits in Key (default 4)
+)(
+
+      input clock,
+		input reset,
+		input [N-1:0] key,
+		output reg Error, // Error
+		output reg Tie,   //Tie
+		output reg o,     // Circles
+		output reg x,     // Cross
+		output reg [8:0] R,     // Record nine results
+	   output reg [N-1:0] k2,
+	   output reg [N-1:0] k3,
+	   output reg [N-1:0] k4,
+		output reg [N-1:0] m1,
+	   output reg [N-1:0] m2,
+	   output reg [N-1:0] m3,
+	   output reg [N-1:0] m4
+);
+//State-Machine Registers
+     reg [3:0] state;	  
+	  localparam Well0_STATE = 4'b0001;   // The well stage
+	  localparam Well1_STATE = 4'b0010;
+	  localparam Well2_STATE = 4'b0011;	  
+	  localparam Well3_STATE = 4'b0100;	  
+	  localparam Well4_STATE = 4'b0101;   // The matching stage
+	  localparam Well5_STATE = 4'b0110;
+	  localparam Well6_STATE = 4'b0111;
+	  localparam Well7_STATE = 4'b1000;
+	  localparam Well8_STATE = 4'b1001;    // The encoding stage
+	  localparam Lock2_STATE = 4'b1010;
+	  localparam Lock3_STATE = 4'b1011;
+	  localparam Lock4_STATE = 4'b1100;
+
+// Define the outputs for each state
+always @(posedge clock or posedge reset) begin
+    if (reset) begin
+        state <= Well0_STATE;
+    end 
+/*else if (t) begin
+        state <= PIN1_STATE; // To timer
+    end 
+*/
+	 else begin // Press the button within 50 rise times
+        case (state)
+               // Unlocked State //
+// According to the sequence of pressing the four key buttons as a PIN code
+            Well1_STATE: begin // Define state PIN1 behaviour
+                if (key) begin
+                    state <= PIN2_STATE;
+						  k1 <= key;    // The first Key button pressed
+                end 
+                else begin
+                    state <= PIN1_STATE;
+                end
+            end
+
+
+
