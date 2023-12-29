@@ -1,0 +1,309 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "P",
+					"strict" : false
+				},
+				{
+					"name" : "G",
+					"strict" : false
+				},
+				{
+					"name" : "LED[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex5[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Hex5[6]",
+					"strict" : false
+				},
+				{
+					"name" : "resetApp",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Wr_n",
+					"strict" : false
+				},
+				{
+					"name" : "LT24RS",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Reset_n",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "LT24Data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "Switch",
+					"strict" : false
+				},
+				{
+					"name" : "r",
+					"strict" : false
+				},
+				{
+					"name" : "key_B",
+					"strict" : false
+				},
+				{
+					"name" : "key_G",
+					"strict" : false
+				},
+				{
+					"name" : "key_R",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

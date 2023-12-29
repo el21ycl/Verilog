@@ -1,0 +1,35 @@
+/* 
+*  In order to output score
+*  
+*/
+
+module Timer (
+  input  score,                    // start to record the score
+  input  clock,
+  input  reset,
+  output reg [7:0] one,        //ones 
+  output reg [7:0] ten         //Tens
+
+);
+
+
+always @(posedge clock or negedge reset) begin
+    if (!reset)begin
+	   one     <= {(32){1'b0}};
+	   ten     <= {(32){1'b0}};
+	 end
+	 else begin
+      if (socre) begin
+		// record the ones
+		 if (one == 9)begin
+		   ten <= ten + 1'b1;
+		    one <= 1'b0;
+		  end
+		  else begin
+		   one <= one + 1'b1;
+			ten <= ten;
+		  end
+		end
+    end
+  end
+endmodule

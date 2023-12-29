@@ -1,0 +1,88 @@
+/*
+ * main.c
+ *
+ *  Created on: 2022Äê3ÔÂ17ÈÕ
+ *      Author: lin
+ */
+#include "HPS_PrivateTimer/HPS_PrivateTimer.h"
+#include "HPS_Watchdog/HPS_Watchdog.h"
+
+#include <stdlib.h>
+//
+// Fatal Status Check
+// ==================
+//
+// This can be used to terminate the program (i.e. crash + reboot)
+// if the "status" value returned from a driver doesn't match the
+// "successStatus" value.
+//
+// You can add a break point on the exit line during debugging to
+// see why the function crashed.
+//
+void exitOnFail(signed int status, signed int successStatus){
+    if (status != successStatus) {
+        exit((int)status); //Add breakpoint here to catch failure
+    }
+}
+
+
+//Main Function
+int main(void) {
+    /* Pointers to peripherals */
+    // Red LEDs base address
+    volatile unsigned int *LEDR_ptr = (unsigned int *) 0xFF200000;
+   /* Local Variables */
+    unsigned int lastBlinkTimerValue = Timer_value();
+    const unsigned int blinkPeriod = 100000000;
+                                  // 100000000 is 0.5s!
+    /* Initialisation */
+    Timer_initialise(0xFFFEC600);
+    // Set initial value of LEDs
+    *LEDR_ptr = 0x1;
+    // Configure the ARM Private Timer
+    // Set the "Load" value of the timer to max value:
+    Timer_load(0xFFFFFFFF);
+    // Set the "Prescaler" value to 0, Enable the timer (E = 1), Set Automatic reload
+    // on overflow (A = 1), and disable ISR (I = 0)
+    Timer_enable(true);
+    Timer_ar(true);
+    //*private_timer_control   = (0 << 8) | (0 << 2) | (1 << 1) | (1 << 0);
+    /* Main Run Loop */
+    while(1) {
+        // Read the current time
+        unsigned int currentTimerValue = Timer_value();
+        // Check if it is time to blink
+        if ((lastBlinkTimerValue - currentTimerValue) >= blinkPeriod) {
+            // When the difference between the last time and current time is greater
+            // than the required blink period. We use subtraction to prevent glitches
+            // when the timer value overflows:
+            //      e.g. (0x10 - 0xFFFFFFFF) & 0xFFFFFFFF = 0x11.
+            // If the time elapsed is enough, perform our actions.
+            *LEDR_ptr = ~(*LEDR_ptr); // Invert the LEDs
+            // To avoid accumulation errors, we make sure to mark the last time
+            // the task was run as when we expected to run it. Counter is going
+            // down, so subtract the interval from the last time.
+            lastBlinkTimerValue = lastBlinkTimerValue - blinkPeriod;
+        }
+        // --- You can have many other events here by giving each an if statement
+        // --- and its own "last#TimerValue" and "#Period" variables, then using the
+        // --- same structure as above.
+        // Next, make sure we clear the private timer interrupt flag if it is set
+        if (Timer_interrupt(false) & 0x1) {
+            // If the timer interrupt flag is set, clear the flag
+        	 //*LEDR_ptr =0x10;
+        	Timer_interrupt(true);
+
+        }
+        // Finally, reset the watchdog timer.
+        HPS_ResetWatchdog();
+
+    }
+
+
+}
+
+
+
+
+

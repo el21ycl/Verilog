@@ -1,0 +1,18 @@
+DEPTH = 76800;
+WIDTH = 16;
+ADDRESS_RADIX = UNS;
+DATA_RADIX = HEX;
+CONTENT BEGIN
+[0..76799] : 0;
+0 : 53;
+1 : 75;
+2 : 70;
+3 : 72;
+4 : 65;
+5 : 6d;
+6 : 65;
+7 : 2e;
+8 : 4a;
+9 : 50;
+10 : 47;
+END;

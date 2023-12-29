@@ -1,0 +1,85 @@
+14:48:34 **** Incremental Build of configuration Debug for project 1-2-Summation ****
+make all 
+'Building file: ../main.c'
+'Invoking: ARM C Compiler 5'
+armcc --cpu=Cortex-A9.no_neon.no_vfp --arm -I"C:\Users\lin\Documents\GitHub\el21ycl\Workspace\ELEC5620M-Resources\Drivers" -O0 -g --md --depend_format=unix_escaped --no_depend_system_headers -c -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: 1-2-Summation.axf'
+'Invoking: ARM Linker 5'
+armlink --cpu=Cortex-A9.no_neon.no_vfp --entry=__main --scatter="C:\Users\lin\Documents\GitHub\el21ycl\Workspace\ELEC5620M-Resources\ScatterFiles\FPGARomRam.scat" --info=sizes -o "1-2-Summation.axf"  ./Drivers/VFP_Enable/VFP_Enable.o  ./Drivers/HPS_usleep/HPS_usleep.o  ./Drivers/HPS_IRQ/HPS_IRQ.o  ./Drivers/HPS_I2C/HPS_I2C.o  ./Drivers/FatFS/hwlib/alt_clock_manager.o ./Drivers/FatFS/hwlib/alt_sdmmc.o  ./Drivers/FatFS/diskio_cyclonev.o ./Drivers/FatFS/ff.o ./Drivers/FatFS/ffsystem.o ./Drivers/FatFS/ffunicode.o  ./Drivers/DE1SoC_WM8731/DE1SoC_WM8731.o  ./Drivers/DE1SoC_Servo/DE1SoC_Servo.o  ./Drivers/DE1SoC_Mandelbrot/DE1SoC_Mandelbrot.o  ./Drivers/DE1SoC_LT24/DE1SoC_LT24.o  ./Drivers/BasicFont/BasicFont.o  ./main.o   
+"C:\Users\lin\Documents\GitHub\el21ycl\Workspace\ELEC5620M-Resources\ScatterFiles\FPGARomRam.scat", line 14 (column 12): Warning: L6329W: Pattern *(RW) only matches removed unused sections.
+"C:\Users\lin\Documents\GitHub\el21ycl\Workspace\ELEC5620M-Resources\ScatterFiles\FPGARomRam.scat", line 14 (column 16): Warning: L6329W: Pattern *(ZI) only matches removed unused sections.
+Finished: 0 information, 2 warning and 0 error messages.
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+         0          0          0          0          0       1444   VFP_Enable.o
+       116          8          0          0          0       1412   main.o
+
+    ----------------------------------------------------------------------
+       116          8          0          0      16384       2856   Object Totals
+         0          0          0          0      16384          0   (incl. Generated)
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         8          0          0          0          0         68   __main.o
+         0          0          0          0          0          0   __rtentry.o
+        12          0          0          0          0          0   __rtentry2.o
+         8          4          0          0          0          0   __rtentry6.o
+        18          0          0          0          0         80   exit.o
+         0          0          0          0          0          0   indicate_semi.o
+         2          0          0          0          0          0   libinit.o
+         2          0          0          0          0          0   libinit2.o
+         2          0          0          0          0          0   libshutdown.o
+         2          0          0          0          0          0   libshutdown2.o
+         2          0          0          0          0          0   rtexit.o
+        10          0          0          0          0          0   rtexit2.o
+        12          4          0          0          0         68   sys_exit.o
+         2          0          0          0          0         68   use_no_semi.o
+
+    ----------------------------------------------------------------------
+        84          8          0          0          0        284   Library Totals
+         4          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+        80          8          0          0          0        284   c_2.l
+
+    ----------------------------------------------------------------------
+        84          8          0          0          0        284   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+       200         16          0          0      16384       3036   Grand Totals
+       200         16          0          0      16384       3036   ELF Image Totals
+       200         16          0          0          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                  200 (   0.20kB)
+    Total RW  Size (RW Data + ZI Data)             16384 (  16.00kB)
+    Total ROM Size (Code + RO Data + RW Data)        200 (   0.20kB)
+
+==============================================================================
+
+'Finished building target: 1-2-Summation.axf'
+' '
+
+14:48:36 Build Finished (took 1s.922ms)
+

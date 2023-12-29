@@ -1,0 +1,133 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : -4.136
+TNS   : -693.250
+
+Type  : Slow 1100mV 85C Model Setup 'LT24:LT24|score'
+Slack : -2.142
+TNS   : -47.924
+
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : -1.473
+TNS   : -2.769
+
+Type  : Slow 1100mV 85C Model Hold 'LT24:LT24|score'
+Slack : 0.518
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'clock'
+Slack : -1.853
+TNS   : -93.850
+
+Type  : Slow 1100mV 85C Model Removal 'clock'
+Slack : 0.963
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.437
+TNS   : -153.939
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'LT24:LT24|score'
+Slack : -0.394
+TNS   : -14.848
+
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : -4.167
+TNS   : -671.132
+
+Type  : Slow 1100mV 0C Model Setup 'LT24:LT24|score'
+Slack : -2.077
+TNS   : -47.271
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : -1.729
+TNS   : -3.341
+
+Type  : Slow 1100mV 0C Model Hold 'LT24:LT24|score'
+Slack : 0.506
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'clock'
+Slack : -1.900
+TNS   : -88.349
+
+Type  : Slow 1100mV 0C Model Removal 'clock'
+Slack : 0.904
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.417
+TNS   : -164.539
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'LT24:LT24|score'
+Slack : -0.394
+TNS   : -14.810
+
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : -2.368
+TNS   : -303.591
+
+Type  : Fast 1100mV 85C Model Setup 'LT24:LT24|score'
+Slack : -0.848
+TNS   : -19.045
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : -0.900
+TNS   : -1.650
+
+Type  : Fast 1100mV 85C Model Hold 'LT24:LT24|score'
+Slack : 0.227
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'clock'
+Slack : -0.788
+TNS   : -26.263
+
+Type  : Fast 1100mV 85C Model Removal 'clock'
+Slack : 0.557
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.405
+TNS   : -25.889
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'LT24:LT24|score'
+Slack : -0.014
+TNS   : -0.140
+
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : -2.117
+TNS   : -256.530
+
+Type  : Fast 1100mV 0C Model Setup 'LT24:LT24|score'
+Slack : -0.727
+TNS   : -16.652
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : -1.071
+TNS   : -4.944
+
+Type  : Fast 1100mV 0C Model Hold 'LT24:LT24|score'
+Slack : 0.203
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'clock'
+Slack : -0.718
+TNS   : -16.988
+
+Type  : Fast 1100mV 0C Model Removal 'clock'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.393
+TNS   : -25.512
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'LT24:LT24|score'
+Slack : 0.010
+TNS   : 0.000
+
+------------------------------------------------------------
