@@ -1,0 +1,424 @@
+Analysis & Synthesis report for Controller
+Sat Feb 13 12:25:00 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |Controller|Bcd:Bcdinst|r
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Random:Randominst
+ 14. Port Connectivity Checks: "Number:Numberinst"
+ 15. Port Connectivity Checks: "Random:Randominst"
+ 16. Port Connectivity Checks: "Time:Timeinst"
+ 17. Port Connectivity Checks: "Key:Keyinst"
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+ 20. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Feb 13 12:25:00 2021           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; Controller                                      ;
+; Top-level Entity Name              ; Controller                                      ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 199                                             ;
+;     Total combinational functions  ; 176                                             ;
+;     Dedicated logic registers      ; 94                                              ;
+; Total registers                    ; 94                                              ;
+; Total pins                         ; 18                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; Controller         ; Controller         ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                 ;
++----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                   ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
+; Controller.v                     ; yes             ; User Verilog HDL File  ; D:/ELEC373/Assigment_2/Controller/Controller.v ;         ;
+; ../Key/Key.v                     ; yes             ; User Verilog HDL File  ; D:/ELEC373/Assigment_2/Key/Key.v               ;         ;
+; ../Time/Time.v                   ; yes             ; User Verilog HDL File  ; D:/ELEC373/Assigment_2/Time/Time.v             ;         ;
+; ../../Random/Random.v            ; yes             ; User Verilog HDL File  ; D:/ELEC373/Assigment_2/Random/Random.v         ;         ;
+; ../Number/Number.v               ; yes             ; User Verilog HDL File  ; D:/ELEC373/Assigment_2/Number/Number.v         ;         ;
+; ../Bcd/Bcd.v                     ; yes             ; User Verilog HDL File  ; D:/ELEC373/Assigment_2/Bcd/Bcd.v               ;         ;
+; ../Bcd7seg_0/Bcd7seg_0.v         ; yes             ; User Verilog HDL File  ; D:/ELEC373/Assigment_2/Bcd7seg_0/Bcd7seg_0.v   ;         ;
+; ../Bcd7seg_1/Bcd7seg_1.v         ; yes             ; User Verilog HDL File  ; D:/ELEC373/Assigment_2/Bcd7seg_1/Bcd7seg_1.v   ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 199   ;
+;                                             ;       ;
+; Total combinational functions               ; 176   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 72    ;
+;     -- 3 input functions                    ; 20    ;
+;     -- <=2 input functions                  ; 84    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 145   ;
+;     -- arithmetic mode                      ; 31    ;
+;                                             ;       ;
+; Total registers                             ; 94    ;
+;     -- Dedicated logic registers            ; 94    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 18    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 94    ;
+; Total fan-out                               ; 804   ;
+; Average fan-out                             ; 2.79  ;
++---------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                               ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
+; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Library Name ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
+; |Controller                    ; 176 (0)           ; 94 (0)       ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |Controller                           ; work         ;
+;    |Bcd7seg_0:Bcd7seg_0inst_0| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|Bcd7seg_0:Bcd7seg_0inst_0 ; work         ;
+;    |Bcd7seg_1:Bcd7seg_1inst_1| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|Bcd7seg_1:Bcd7seg_1inst_1 ; work         ;
+;    |Bcd:Bcdinst|               ; 21 (21)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|Bcd:Bcdinst               ; work         ;
+;    |Key:Keyinst|               ; 8 (8)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|Key:Keyinst               ; work         ;
+;    |Number:Numberinst|         ; 35 (35)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|Number:Numberinst         ; work         ;
+;    |Random:Randominst|         ; 20 (20)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|Random:Randominst         ; work         ;
+;    |Time:Timeinst|             ; 78 (78)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Controller|Time:Timeinst             ; work         ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-------------------------------------------+
+; State Machine - |Controller|Bcd:Bcdinst|r ;
++-------+-----------------------------------+
+; Name  ; r.001                             ;
++-------+-----------------------------------+
+; r.000 ; 0                                 ;
+; r.001 ; 1                                 ;
++-------+-----------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; Bcd:Bcdinst|r~4                       ; Lost fanout                            ;
+; Bcd:Bcdinst|r~5                       ; Lost fanout                            ;
+; Bcd:Bcdinst|r.001                     ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 3 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 94    ;
+; Number of registers using Synchronous Clear  ; 14    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 73    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; Random:Randominst|R[0]                 ; 3       ;
+; Random:Randominst|R[7]                 ; 8       ;
+; Random:Randominst|R[3]                 ; 3       ;
+; Total number of inverted registers = 3 ;         ;
++----------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Controller|Bcd:Bcdinst|d_0[3]       ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Controller|Bcd:Bcdinst|d_1[3]       ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Controller|Time:Timeinst|Y[18]      ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Controller|Number:Numberinst|a[1]   ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Controller|Random:Randominst|R_b[2] ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |Controller|Key:Keyinst|Z[0]         ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |Controller|Number:Numberinst|b[7]   ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |Controller|Number:Numberinst|c[6]   ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |Controller|Number:Numberinst|R_n[6] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Random:Randominst ;
++-----------------+----------+-----------------------------------+
+; Parameter Name  ; Value    ; Type                              ;
++-----------------+----------+-----------------------------------+
+; Length          ; 8        ; Signed Integer                    ;
+; initial_state   ; 10001001 ; Unsigned Binary                   ;
+; Tap_Coefficient ; 11110011 ; Unsigned Binary                   ;
++-----------------+----------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Number:Numberinst"                                                                                                                                                              ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; t    ; Input ; Warning  ; Input port expression (3 bits) is wider than the input port (1 bits) it drives.  The 2 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Random:Randominst"                                                                                                                                                                ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                                                                          ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; start ; Input  ; Warning  ; Input port expression (3 bits) is wider than the input port (1 bits) it drives.  The 2 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; R     ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "R[7..1]" have no fanouts                                                             ;
+; R     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                              ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Time:Timeinst"                                                                                                                                                        ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; t    ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (3 bits) it drives.  The 2 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Key:Keyinst"                                                                                                                                                           ;
++-------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                                                               ;
++-------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; start ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (3 bits) it drives.  The 2 most-significant bit(s) in the port expression will be connected to GND. ;
++-------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Feb 13 12:24:48 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Controller -c Controller
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file controller.v
+    Info (12023): Found entity 1: Controller
+Info (12021): Found 1 design units, including 1 entities, in source file /elec373/assigment_2/key/key.v
+    Info (12023): Found entity 1: Key
+Info (12021): Found 1 design units, including 1 entities, in source file /elec373/assigment_2/time/time.v
+    Info (12023): Found entity 1: Time
+Info (12021): Found 1 design units, including 1 entities, in source file /elec373/assigment_2/random/random.v
+    Info (12023): Found entity 1: Random
+Info (12021): Found 1 design units, including 1 entities, in source file /elec373/assigment_2/number/number.v
+    Info (12023): Found entity 1: Number
+Info (12021): Found 1 design units, including 1 entities, in source file /elec373/assigment_2/bcd/bcd.v
+    Info (12023): Found entity 1: Bcd
+Info (12021): Found 1 design units, including 1 entities, in source file /elec373/assigment_2/bcd7seg_0/bcd7seg_0.v
+    Info (12023): Found entity 1: Bcd7seg_0
+Info (12021): Found 1 design units, including 1 entities, in source file /elec373/assigment_2/bcd7seg_1/bcd7seg_1.v
+    Info (12023): Found entity 1: Bcd7seg_1
+Info (12021): Found 1 design units, including 1 entities, in source file block1.bdf
+    Info (12023): Found entity 1: Block1
+Warning (10236): Verilog HDL Implicit Net warning at Controller.v(41): created implicit net for "R"
+Info (12127): Elaborating entity "Controller" for the top level hierarchy
+Info (12128): Elaborating entity "Key" for hierarchy "Key:Keyinst"
+Info (12128): Elaborating entity "Time" for hierarchy "Time:Timeinst"
+Info (12128): Elaborating entity "Random" for hierarchy "Random:Randominst"
+Info (12128): Elaborating entity "Number" for hierarchy "Number:Numberinst"
+Warning (10036): Verilog HDL or VHDL warning at Number.v(12): object "d" assigned a value but never read
+Info (12128): Elaborating entity "Bcd" for hierarchy "Bcd:Bcdinst"
+Warning (10230): Verilog HDL assignment warning at Bcd.v(32): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at Bcd.v(34): truncated value with size 32 to match size of target (4)
+Info (12128): Elaborating entity "Bcd7seg_1" for hierarchy "Bcd7seg_1:Bcd7seg_1inst_1"
+Info (12128): Elaborating entity "Bcd7seg_0" for hierarchy "Bcd7seg_0:Bcd7seg_0inst_0"
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "t[2]" is missing source, defaulting to GND
+    Warning (12110): Net "t[1]" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "start[2]" is missing source, defaulting to GND
+    Warning (12110): Net "start[1]" is missing source, defaulting to GND
+    Warning (12110): Net "t[2]" is missing source, defaulting to GND
+    Warning (12110): Net "t[1]" is missing source, defaulting to GND
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (17049): 2 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file D:/ELEC373/Assigment_2/Controller/output_files/Controller.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 225 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 207 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4616 megabytes
+    Info: Processing ended: Sat Feb 13 12:25:00 2021
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:02
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/ELEC373/Assigment_2/Controller/output_files/Controller.map.smsg.
+
+

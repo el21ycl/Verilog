@@ -1,0 +1,21 @@
+module control (
+      input clk,
+		input rst,
+		input Key_2 ,
+	   input Key_0 ,
+	   output [6:0] hex4 , //that is a count for single digits
+	   output [6:0] hex5   //that is a count for tens digits
+) ;
+
+      wire cnt_0;         //Controller connection counter output
+		wire cnt_1;
+		
+		// Instantiate the module
+		count countInst (
+		  .clk          (clk),
+		  .rst          (rst),
+		  .Key_2        (Key_2),
+		  .Key_0        (Key_0),
+		  .cnt_0        (cnt_0),
+		  .cnt_1        (cnt_1),
+		)

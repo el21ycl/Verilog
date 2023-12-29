@@ -1,0 +1,343 @@
+$comment
+	File created using the following command:
+		vcd file Bcd.msim.vcd -direction
+$end
+$date
+	Sat Feb 13 00:05:17 2021
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Bcd_vlg_vec_tst $end
+$var reg 8 ! R_n [7:0] $end
+$var reg 1 " clk $end
+$var reg 1 # rst $end
+$var wire 1 $ d_0 [3] $end
+$var wire 1 % d_0 [2] $end
+$var wire 1 & d_0 [1] $end
+$var wire 1 ' d_0 [0] $end
+$var wire 1 ( d_1 [3] $end
+$var wire 1 ) d_1 [2] $end
+$var wire 1 * d_1 [1] $end
+$var wire 1 + d_1 [0] $end
+$var wire 1 , test [7] $end
+$var wire 1 - test [6] $end
+$var wire 1 . test [5] $end
+$var wire 1 / test [4] $end
+$var wire 1 0 test [3] $end
+$var wire 1 1 test [2] $end
+$var wire 1 2 test [1] $end
+$var wire 1 3 test [0] $end
+$var wire 1 4 sampler $end
+$scope module i1 $end
+$var wire 1 5 gnd $end
+$var wire 1 6 vcc $end
+$var wire 1 7 unknown $end
+$var tri1 1 8 devclrn $end
+$var tri1 1 9 devpor $end
+$var tri1 1 : devoe $end
+$var wire 1 ; clk~combout $end
+$var wire 1 < clk~clkctrl_outclk $end
+$var wire 1 = rst~combout $end
+$var wire 1 > d_0[0]~1_combout $end
+$var wire 1 ? d_0[0]~reg0_regout $end
+$var wire 1 @ d_1[0]~0_combout $end
+$var wire 1 A d_1[0]~reg0_regout $end
+$var wire 1 B d_1[1]~1_combout $end
+$var wire 1 C d_1[1]~reg0_regout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0"
+0#
+0'
+0&
+0%
+0$
+0+
+0*
+0)
+0(
+13
+12
+11
+10
+1/
+0.
+0-
+0,
+x4
+05
+16
+x7
+18
+19
+1:
+0;
+0<
+0=
+1>
+0?
+1@
+0A
+1B
+0C
+$end
+#20000
+1"
+1;
+1<
+04
+1C
+1A
+1?
+1*
+1+
+1'
+#40000
+0"
+0;
+0<
+14
+#60000
+1"
+1;
+1<
+04
+#80000
+0"
+0;
+0<
+14
+#100000
+1"
+1;
+1<
+04
+#120000
+0"
+0;
+0<
+14
+#140000
+1"
+1;
+1<
+04
+#160000
+0"
+0;
+0<
+14
+#180000
+1"
+1;
+1<
+04
+#200000
+0"
+0;
+0<
+14
+#220000
+1"
+1;
+1<
+04
+#240000
+0"
+0;
+0<
+14
+#260000
+1"
+1;
+1<
+04
+#280000
+0"
+0;
+0<
+14
+#300000
+1"
+1;
+1<
+04
+#320000
+0"
+0;
+0<
+14
+#340000
+1"
+1;
+1<
+04
+#360000
+0"
+0;
+0<
+14
+#380000
+1"
+1;
+1<
+04
+#400000
+0"
+0;
+0<
+14
+#420000
+1"
+1;
+1<
+04
+#440000
+0"
+0;
+0<
+14
+#460000
+1"
+1;
+1<
+04
+#480000
+0"
+0;
+0<
+14
+#500000
+1"
+1;
+1<
+04
+#520000
+0"
+0;
+0<
+14
+#540000
+1"
+1;
+1<
+04
+#560000
+0"
+0;
+0<
+14
+#580000
+1"
+1;
+1<
+04
+#600000
+0"
+0;
+0<
+14
+#620000
+1"
+1;
+1<
+04
+#640000
+0"
+0;
+0<
+14
+#660000
+1"
+1;
+1<
+04
+#680000
+0"
+0;
+0<
+14
+#700000
+1"
+1;
+1<
+04
+#720000
+0"
+0;
+0<
+14
+#740000
+1"
+1;
+1<
+04
+#760000
+0"
+0;
+0<
+14
+#780000
+1"
+1;
+1<
+04
+#800000
+0"
+0;
+0<
+14
+#820000
+1"
+1;
+1<
+04
+#840000
+0"
+0;
+0<
+14
+#860000
+1"
+1;
+1<
+04
+#880000
+0"
+0;
+0<
+14
+#900000
+1"
+1;
+1<
+04
+#920000
+0"
+0;
+0<
+14
+#940000
+1"
+1;
+1<
+04
+#960000
+0"
+0;
+0<
+14
+#980000
+1"
+1;
+1<
+04
+#1000000

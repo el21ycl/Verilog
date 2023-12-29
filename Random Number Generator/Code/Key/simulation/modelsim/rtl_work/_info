@@ -1,0 +1,86 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\ELEC373\Assigment_2\Key\simulation\modelsim
+vKey
+IjlGP@h5<7<3^]7R_X5B;Z1
+V_UBA]EbP0[?H0IaNZ1aIT3
+Z1 dD:\ELEC373\Assigment_2\Key\simulation\modelsim
+w1613070087
+8D:/ELEC373/Assigment_2/Key/Key.v
+FD:/ELEC373/Assigment_2/Key/Key.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+o-vlog01compat -work work -O0
+n@key
+!i10b 1
+!s100 VkfeB`G>^O2d>[E[DN3JL1
+!s85 0
+!s108 1613179737.628000
+!s107 D:/ELEC373/Assigment_2/Key/Key.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ELEC373/Assigment_2/Key|D:/ELEC373/Assigment_2/Key/Key.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Key -O0
+vKey_vlg_check_tst
+!i10b 1
+!s100 NJV:VL<RX>NmJ`3df;EUd1
+I3HMlHMFUkC7gYmoJ5k1MJ2
+VhfbPK0;=0=P^1Azie`19Y3
+R1
+Z3 w1613179639
+Z4 8D:/ELEC373/Assigment_2/Key/simulation/modelsim/Waveform.vwf.vt
+Z5 FD:/ELEC373/Assigment_2/Key/simulation/modelsim/Waveform.vwf.vt
+L0 63
+R2
+r1
+!s85 0
+31
+Z6 !s108 1613179756.861000
+Z7 !s107 D:/ELEC373/Assigment_2/Key/simulation/modelsim/Waveform.vwf.vt|
+Z8 !s90 -reportprogress|300|-work|work|D:/ELEC373/Assigment_2/Key/simulation/modelsim/Waveform.vwf.vt|
+!s101 -O0
+Z9 o-work work -O0
+n@key_vlg_check_tst
+vKey_vlg_sample_tst
+!i10b 1
+!s100 =BTcMk_5WJ_37MlQ43z?e1
+IfF6e:AQ9F4JiCHH1PY@jO1
+VcAMaOjEz8^OdL2TMUcM;>0
+R1
+R3
+R4
+R5
+L0 29
+R2
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+n@key_vlg_sample_tst
+vKey_vlg_vec_tst
+!i10b 1
+!s100 o;R4aLhm`HkX;d@ZWA@[Q3
+IKaKYL6Z[29omDW[[8io^E0
+VbID8deVb<@mHUjjLif1IG2
+R1
+R3
+R4
+R5
+L0 238
+R2
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+n@key_vlg_vec_tst

@@ -1,0 +1,40 @@
+# Reading D:/ELEC373/modelsim_ase/tcl/vsim/pref.tcl 
+# do Bcd_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\ELEC373\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\ELEC373\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Bcd {D:/ELEC373/Assigment_2/Bcd/Bcd.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bcd
+# 
+# Top level modules:
+# 	Bcd
+# 
+do D:/ELEC373/Assigment_2/Bcd/simulation/modelsim/Waveform.vwf.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bcd_vlg_sample_tst
+# -- Compiling module Bcd_vlg_check_tst
+# -- Compiling module Bcd_vlg_vec_tst
+# 
+# Top level modules:
+# 	Bcd_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.Bcd_vlg_vec_tst 
+# Loading work.Bcd_vlg_vec_tst
+# Loading work.Bcd
+# Loading work.Bcd_vlg_sample_tst
+# Loading work.Bcd_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : D:/ELEC373/Assigment_2/Bcd/simulation/modelsim/Waveform.vwf.vt(437)
+#    Time: 1 us  Iteration: 0  Instance: /Bcd_vlg_vec_tst/tb_out
+# 1
+# Break in Module Bcd_vlg_check_tst at D:/ELEC373/Assigment_2/Bcd/simulation/modelsim/Waveform.vwf.vt line 437
+# Simulation Breakpoint: 1
+# Break in Module Bcd_vlg_check_tst at D:/ELEC373/Assigment_2/Bcd/simulation/modelsim/Waveform.vwf.vt line 437
+# MACRO D:\ELEC373\Assigment_2\Bcd\simulation\modelsim\Waveform.vwf.do PAUSED at line 34

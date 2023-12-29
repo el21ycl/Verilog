@@ -1,0 +1,27 @@
+module Random 
+  parameter  Length = 8;
+  parameter  initial_state = 8'b1000_1001;
+  parameter  [Length1-1:0]  Tap_Coefficient = 8'b1111_0011;
+  
+  input clk, rst;
+  output [Length1-1:0] R;
+  reg [Length1-1:0] R;
+  
+  always @ (posedge clk)
+    if (rst == 0) 
+	   R <= initial_state;
+	 else
+	   begin
+		  R[0] <= R[7];
+		  R[1] <= Tap_Coefficiet[1] ? R[0] ^ R[7] : R[0];
+		  R[2] <= Tap_Coefficiet[2] ? R[1] ^ R[7] : R[1];
+		  R[3] <= Tap_Coefficiet[3] ? R[2] ^ R[7] : R[2];
+		  R[4] <= Tap_Coefficiet[4] ? R[3] ^ R[7] : R[3];
+		  R[5] <= Tap_Coefficiet[5] ? R[4] ^ R[7] : R[4];
+		  R[6] <= Tap_Coefficiet[6] ? R[5] ^ R[7] : R[5];
+		  R[7] <= Tap_Coefficiet[7] ? R[6] ^ R[7] : R[6];
+		end
+endmodule
+		  
+		
+  

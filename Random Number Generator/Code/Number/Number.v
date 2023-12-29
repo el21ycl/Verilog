@@ -1,0 +1,81 @@
+module Number(
+     input clk ,
+	  input rst ,
+	  input [7:0] R_b ,
+	  input [3:0] Z,           //Count the number of times to press Key_0
+	  input t,           //Whether to start timing
+	  output reg [7:0] R_n 
+) ;
+     reg [7:0] a;       //Store used numbers
+	  reg [7:0] b;
+	  reg [7:0] c;
+	  reg [7:0] d;
+	  
+
+//Avoid displaying repeated numbers
+  always @ (posedge clk)
+   begin
+    if (rst)                  //If rst is active it will reset
+	  begin 
+	   R_n <= 1'd0;
+	   a <= 1'd0;
+		b <= 1'd0;
+		c <= 1'd0;
+		d <= 1'd0;
+	  end
+	 else if (Z == 0)             //when Z=0
+	  begin 
+	   if (t == 1'd0)
+	   begin
+	    a <= R_b;
+		 R_n <= R_b;
+	   end
+		else if (t == 1'd1)  //Keep this number unchanged for 4 seconds when you press the Key_0
+		begin
+		 R_n <= R_n;
+		end
+	  end
+	 else if (Z == 1 && a !=  R_b)  //when Z=1
+	  begin 
+	   if (t == 1'd0)
+	   begin
+	    b <= R_b;
+		 R_n <= R_b;
+	   end
+		else if (t == 1'd1)  //Keep this number unchanged for 4 seconds when you press the Key_0
+		begin
+		 R_n <= R_n;
+		end
+	  end
+	 else if (Z == 2 && a !=  R_b && R_b != b)  //when Z=2
+	  begin 
+	   if (t == 1'd0)
+	   begin
+	    c <= R_b;
+		 R_n <= R_b;
+	   end
+		else if (t == 1'd1)  //Keep this number unchanged for 4 seconds when you press the Key_0
+		begin
+		 R_n <= R_n;
+		end
+	  end
+	 else if (Z == 3 && a !=  R_b && R_b != b && R_b != c)  //when Z=3
+	  begin 
+	   if (t == 1'd0)
+	   begin
+	    d <= R_b;
+		 R_n <= R_b;
+	   end
+		else if (t == 1'd1)  //Keep this number unchanged for 4 seconds when you press the Key_0
+		begin
+		 R_n <= R_n;
+		end
+	  end
+	end
+endmodule 
+	 
+	 
+	 
+	 
+	 
+	 

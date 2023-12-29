@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\ELEC373\Random\simulation\qsim
+vRandom
+Z1 I9f4GC^naV^C;Q3YjFM7XY3
+Z2 VQ`dD>5TWUl37FY`>J;oO42
+Z3 dD:\ELEC373\Assigment_2\Random\simulation\qsim
+Z4 w1613178585
+Z5 8Random.vo
+Z6 FRandom.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Random.vo|
+Z9 o-work work -O0
+Z10 n@random
+!i10b 1
+Z11 !s100 nS]I2;^3nz`f`Z5J8Akhh2
+!s85 0
+Z12 !s108 1613178586.392000
+Z13 !s107 Random.vo|
+!s101 -O0
+vRandom_vlg_check_tst
+!i10b 1
+Z14 !s100 CDCE:1jATWE8elfDF8S_?3
+Z15 I7ZFV7QS2dM`J=O?`gA:]63
+Z16 VEJl47S0BYfW9eA]F;:z];0
+R3
+Z17 w1613178574
+Z18 8Random.vt
+Z19 FRandom.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z20 !s108 1613178586.642000
+Z21 !s107 Random.vt|
+Z22 !s90 -work|work|Random.vt|
+!s101 -O0
+R9
+Z23 n@random_vlg_check_tst
+vRandom_vlg_sample_tst
+!i10b 1
+Z24 !s100 a@3YkDOa`Ih>:af0CKHTa1
+Z25 IV@DALYN?ZbYDGZ7KNaEom2
+Z26 VY1KO<MZghP^X5BQS<Aj2R1
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@random_vlg_sample_tst
+vRandom_vlg_vec_tst
+!i10b 1
+!s100 IA^]=n;iJDnNiDRRC38HO2
+IYQG7aIdFj>eb_YJ9Xi8[32
+Z28 VOFz:SjN_jh>8E4f>Bi>IP3
+R3
+R17
+R18
+R19
+Z29 L0 433
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z30 n@random_vlg_vec_tst

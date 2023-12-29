@@ -1,0 +1,233 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\ELEC373\Assigment_2\Controller\simulation\modelsim
+vBcd
+IFak4WYU8`8b^oRRhePVnj3
+V3;<d6NA6EMF7lNi@<hJW^1
+Z1 dD:\ELEC373\Assigment_2\Controller\simulation\modelsim
+w1613176134
+8D:/ELEC373/Assigment_2/Bcd/Bcd.v
+FD:/ELEC373/Assigment_2/Bcd/Bcd.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@bcd
+!i10b 1
+!s100 FT]BCSBX262^acG?n;h>D3
+!s85 0
+!s108 1613219175.414000
+!s107 D:/ELEC373/Assigment_2/Bcd/Bcd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ELEC373/Assigment_2/Bcd|D:/ELEC373/Assigment_2/Bcd/Bcd.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Bcd -O0
+vBcd7seg_0
+IkO^C>kCWWIG1UfGQmCbeF1
+V3DjcCZfX0]d0mKI55g[cM3
+R1
+w1613176643
+8D:/ELEC373/Assigment_2/Bcd7seg_0/Bcd7seg_0.v
+FD:/ELEC373/Assigment_2/Bcd7seg_0/Bcd7seg_0.v
+L0 1
+R2
+r1
+31
+R3
+n@bcd7seg_0
+!i10b 1
+!s100 OiOcZR3`g0;Ahb<Jf4>Ad1
+!s85 0
+!s108 1613219175.629000
+!s107 D:/ELEC373/Assigment_2/Bcd7seg_0/Bcd7seg_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ELEC373/Assigment_2/Bcd7seg_0|D:/ELEC373/Assigment_2/Bcd7seg_0/Bcd7seg_0.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Bcd7seg_0 -O0
+vBcd7seg_1
+IDlX`=9TU9RZRSm@n12gVg1
+Vzjl^;e24fmQG^U53E<YHK2
+R1
+w1613129742
+8D:/ELEC373/Assigment_2/Bcd7seg_1/Bcd7seg_1.v
+FD:/ELEC373/Assigment_2/Bcd7seg_1/Bcd7seg_1.v
+L0 1
+R2
+r1
+31
+R3
+n@bcd7seg_1
+!i10b 1
+!s100 ZHKHKHI>`Mn3EFENzZf_g0
+!s85 0
+!s108 1613219175.874000
+!s107 D:/ELEC373/Assigment_2/Bcd7seg_1/Bcd7seg_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ELEC373/Assigment_2/Bcd7seg_1|D:/ELEC373/Assigment_2/Bcd7seg_1/Bcd7seg_1.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Bcd7seg_1 -O0
+vController
+IdQ>h1>HYT<iXNCeJ=E[4@0
+VkF8MI6gRDG;OEmJolZgc?0
+R1
+w1613219087
+8D:/ELEC373/Assigment_2/Controller/Controller.v
+FD:/ELEC373/Assigment_2/Controller/Controller.v
+L0 1
+R2
+r1
+31
+R3
+n@controller
+!i10b 1
+!s100 lb5WlFz;f3e@n[1CEHob]1
+!s85 0
+!s108 1613219174.195000
+!s107 D:/ELEC373/Assigment_2/Controller/Controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ELEC373/Assigment_2/Controller|D:/ELEC373/Assigment_2/Controller/Controller.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Controller -O0
+vController_vlg_check_tst
+!i10b 1
+!s100 J9mCD]<h;Z4bZEM:X8:nK2
+I;ZK4`?kU;hG4hH`4Y6DZh0
+VZJ_SEWZNMNYc?C?VkgEiX1
+R1
+Z4 w1613215720
+Z5 8D:/ELEC373/Assigment_2/Controller/simulation/modelsim/Waveform.vwf.vt
+Z6 FD:/ELEC373/Assigment_2/Controller/simulation/modelsim/Waveform.vwf.vt
+L0 63
+R2
+r1
+!s85 0
+31
+Z7 !s108 1613219186.055000
+Z8 !s107 D:/ELEC373/Assigment_2/Controller/simulation/modelsim/Waveform.vwf.vt|
+Z9 !s90 -reportprogress|300|-work|work|D:/ELEC373/Assigment_2/Controller/simulation/modelsim/Waveform.vwf.vt|
+!s101 -O0
+Z10 o-work work -O0
+n@controller_vlg_check_tst
+vController_vlg_sample_tst
+!i10b 1
+!s100 _ncN:Qig[[mV0<fiZ9oYX0
+IBladXoNOPoXQgedWdbNBM3
+V8`Qcjc^cWK;A?NB<OelUk2
+R1
+R4
+R5
+R6
+L0 29
+R2
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+R10
+n@controller_vlg_sample_tst
+vController_vlg_vec_tst
+!i10b 1
+!s100 8]an3]I41BieFiPJEdDF21
+I]79]j^meZf0:iLBCMXozm2
+V5IY6i8YWliG4bJHQGBS_f0
+R1
+R4
+R5
+R6
+L0 399
+R2
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+R10
+n@controller_vlg_vec_tst
+vKey
+IjlGP@h5<7<3^]7R_X5B;Z1
+V_UBA]EbP0[?H0IaNZ1aIT3
+R1
+w1613070087
+8D:/ELEC373/Assigment_2/Key/Key.v
+FD:/ELEC373/Assigment_2/Key/Key.v
+L0 1
+R2
+r1
+31
+R3
+n@key
+!i10b 1
+!s100 VkfeB`G>^O2d>[E[DN3JL1
+!s85 0
+!s108 1613219174.428000
+!s107 D:/ELEC373/Assigment_2/Key/Key.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ELEC373/Assigment_2/Key|D:/ELEC373/Assigment_2/Key/Key.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Key -O0
+vNumber
+I[62TalUQ84dhC?VZAK0IZ0
+Ve<T[2OkRU>F2V5;a?7a]K0
+R1
+w1613179709
+8D:/ELEC373/Assigment_2/Number/Number.v
+FD:/ELEC373/Assigment_2/Number/Number.v
+L0 1
+R2
+r1
+31
+R3
+n@number
+!i10b 1
+!s100 ]^QQfg_7@h6;<0g21Y9Ck3
+!s85 0
+!s108 1613219175.194000
+!s107 D:/ELEC373/Assigment_2/Number/Number.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ELEC373/Assigment_2/Number|D:/ELEC373/Assigment_2/Number/Number.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Number -O0
+vRandom
+IafSHNOOVb5DnK<G8KHoSV0
+VVMAbY_J_igdiR9DU;8f9B2
+R1
+w1613176467
+8D:/ELEC373/Assigment_2/Random/Random.v
+FD:/ELEC373/Assigment_2/Random/Random.v
+L0 1
+R2
+r1
+31
+R3
+n@random
+!i10b 1
+!s100 PBG`bzmDNUgChR^nR99D53
+!s85 0
+!s108 1613219174.938000
+!s107 D:/ELEC373/Assigment_2/Random/Random.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ELEC373/Assigment_2/Random|D:/ELEC373/Assigment_2/Random/Random.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Random -O0
+vTime
+IgRWV6`3B=`PU4[M<^7TdF3
+V1cKR1FN86g6?4WlFAR8Bc0
+R1
+w1613180392
+8D:/ELEC373/Assigment_2/Time/Time.v
+FD:/ELEC373/Assigment_2/Time/Time.v
+L0 1
+R2
+r1
+31
+R3
+n@time
+!i10b 1
+!s100 R8VW6RQ]J^49>V8Z@VaNj3
+!s85 0
+!s108 1613219174.690000
+!s107 D:/ELEC373/Assigment_2/Time/Time.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ELEC373/Assigment_2/Time|D:/ELEC373/Assigment_2/Time/Time.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Time -O0

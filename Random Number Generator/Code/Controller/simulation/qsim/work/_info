@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\ELEC373\Assigment_2\Controller\simulation\qsim
+vController
+Z1 !s100 jc?_7_iR^=Le0kHBU?3I;2
+Z2 IPf_4cAGbW:30jFj?bkaF_1
+Z3 VkF8MI6gRDG;OEmJolZgc?0
+Z4 dD:\ELEC373\Assigment_2\Controller\simulation\qsim
+Z5 w1613219757
+Z6 8Controller.vo
+Z7 FController.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Controller.vo|
+Z10 o-work work -O0
+Z11 n@controller
+!i10b 1
+!s85 0
+Z12 !s108 1613219758.752000
+Z13 !s107 Controller.vo|
+!s101 -O0
+vController_vlg_check_tst
+!i10b 1
+Z14 !s100 Bl`HLC9GJWOhRhMXYT>Rb0
+Z15 IgEe>2jY9ij4RE0dIZfj@D0
+Z16 VZJ_SEWZNMNYc?C?VkgEiX1
+R4
+Z17 w1613219746
+Z18 8Controller.vt
+Z19 FController.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z20 !s108 1613219759.151000
+Z21 !s107 Controller.vt|
+Z22 !s90 -work|work|Controller.vt|
+!s101 -O0
+R10
+Z23 n@controller_vlg_check_tst
+vController_vlg_sample_tst
+!i10b 1
+Z24 !s100 <fXVLdS2bW<<Y4b6RUF>61
+Z25 IhYZCz8fXQC6aH@L=;;hoJ3
+Z26 V8`Qcjc^cWK;A?NB<OelUk2
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@controller_vlg_sample_tst
+vController_vlg_vec_tst
+!i10b 1
+!s100 i8Yi^BL`Mhd[Bbk@5j]I81
+I6koXiBWe^UO<99`z5ZeYU3
+Z28 V5IY6i8YWliG4bJHQGBS_f0
+R4
+R17
+R18
+R19
+Z29 L0 399
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@controller_vlg_vec_tst

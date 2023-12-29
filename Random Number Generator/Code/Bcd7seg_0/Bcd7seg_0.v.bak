@@ -1,0 +1,28 @@
+module Bcd7seg_0 (seg ,A );
+  input [3:0] A ;
+  wire [3:0] A ;
+  
+  output [6:0] seg ;
+  wire [6:0] seg ;
+  assign seg =~seg_r;
+  reg [6:0] seg_r;
+  
+      always @(A )
+      begin
+          seg_r = 7'b1111111;
+          case (A )
+			                           //gfedcba
+                  4'b0000: seg_r = 7'b1000000; // 0  
+                  4'b0001: seg_r = 7'b1111001; // 1    - a -
+                  4'b0010: seg_r = 7'b0100100; // 2   |     |
+                  4'b0011: seg_r = 7'b0110000; // 3   f     b
+                  4'b0100: seg_r = 7'b0011001; // 4   |     |
+                  4'b0101: seg_r = 7'b0010010; // 5    - g -
+                  4'b0110: seg_r = 7'b0000010; // 6   |     |
+                  4'b0111: seg_r = 7'b1111000; // 7   e     c
+                  4'b1000: seg_r = 7'b0000000; // 8   |     |
+                  4'b1001: seg_r = 7'b0010000; // 9    - d -
+                  default: seg_r = 7'b0000000;
+          endcase
+      end
+ endmodule  

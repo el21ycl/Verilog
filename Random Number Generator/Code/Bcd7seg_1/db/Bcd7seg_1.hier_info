@@ -1,0 +1,14 @@
+|Bcd7seg_1
+hex5[0] <= hex5_r.DB_MAX_OUTPUT_PORT_TYPE
+hex5[1] <= hex5_r.DB_MAX_OUTPUT_PORT_TYPE
+hex5[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+hex5[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex5[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex5[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex5[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B[0] => Decoder0.IN3
+B[1] => Decoder0.IN2
+B[2] => Decoder0.IN1
+B[3] => Decoder0.IN0
+
+

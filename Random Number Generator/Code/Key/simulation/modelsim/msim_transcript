@@ -1,0 +1,50 @@
+# Reading D:/ELEC373/modelsim_ase/tcl/vsim/pref.tcl 
+do D:/ELEC373/Assigment_2/Key/simulation/modelsim/Waveform.vwf.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: (vlog-19) Failed to access library 'work' at "work".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: D:/ELEC373/modelsim_ase/win32aloem/vlog failed.
+# Error in macro D:\ELEC373\Assigment_2\Key\simulation\modelsim\Waveform.vwf.do line 1
+# D:/ELEC373/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -work work D:/ELEC373/Assigment_2/Key/simulation/modelsim/Waveform.vwf.vt"
+# do Key_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\ELEC373\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\ELEC373\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Key {D:/ELEC373/Assigment_2/Key/Key.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Key
+# 
+# Top level modules:
+# 	Key
+# 
+do D:/ELEC373/Assigment_2/Key/simulation/modelsim/Waveform.vwf.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Key_vlg_sample_tst
+# -- Compiling module Key_vlg_check_tst
+# -- Compiling module Key_vlg_vec_tst
+# 
+# Top level modules:
+# 	Key_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.Key_vlg_vec_tst 
+# Loading work.Key_vlg_vec_tst
+# Loading work.Key
+# Loading work.Key_vlg_sample_tst
+# Loading work.Key_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : D:/ELEC373/Assigment_2/Key/simulation/modelsim/Waveform.vwf.vt(234)
+#    Time: 1 us  Iteration: 0  Instance: /Key_vlg_vec_tst/tb_out
+# 1
+# Break in Module Key_vlg_check_tst at D:/ELEC373/Assigment_2/Key/simulation/modelsim/Waveform.vwf.vt line 234
+# Simulation Breakpoint: 1
+# Break in Module Key_vlg_check_tst at D:/ELEC373/Assigment_2/Key/simulation/modelsim/Waveform.vwf.vt line 234
+# MACRO D:\ELEC373\Assigment_2\Key\simulation\modelsim\Waveform.vwf.do PAUSED at line 14

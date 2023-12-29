@@ -1,0 +1,104 @@
+# Reading D:/ELEC373/modelsim_ase/tcl/vsim/pref.tcl 
+# do Controller_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\ELEC373\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\ELEC373\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Controller {D:/ELEC373/Assigment_2/Controller/Controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Controller
+# 
+# Top level modules:
+# 	Controller
+# vlog -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Key {D:/ELEC373/Assigment_2/Key/Key.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Key
+# 
+# Top level modules:
+# 	Key
+# vlog -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Time {D:/ELEC373/Assigment_2/Time/Time.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Time
+# 
+# Top level modules:
+# 	Time
+# vlog -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Random {D:/ELEC373/Assigment_2/Random/Random.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Random
+# 
+# Top level modules:
+# 	Random
+# vlog -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Number {D:/ELEC373/Assigment_2/Number/Number.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Number
+# 
+# Top level modules:
+# 	Number
+# vlog -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Bcd {D:/ELEC373/Assigment_2/Bcd/Bcd.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bcd
+# 
+# Top level modules:
+# 	Bcd
+# vlog -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Bcd7seg_0 {D:/ELEC373/Assigment_2/Bcd7seg_0/Bcd7seg_0.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bcd7seg_0
+# 
+# Top level modules:
+# 	Bcd7seg_0
+# vlog -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Bcd7seg_1 {D:/ELEC373/Assigment_2/Bcd7seg_1/Bcd7seg_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bcd7seg_1
+# 
+# Top level modules:
+# 	Bcd7seg_1
+# 
+do D:/ELEC373/Assigment_2/Controller/simulation/modelsim/Waveform.vwf.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Controller_vlg_sample_tst
+# -- Compiling module Controller_vlg_check_tst
+# -- Compiling module Controller_vlg_vec_tst
+# 
+# Top level modules:
+# 	Controller_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.Controller_vlg_vec_tst 
+# Loading work.Controller_vlg_vec_tst
+# Loading work.Controller
+# Loading work.Key
+# Loading work.Time
+# Loading work.Random
+# Loading work.Number
+# Loading work.Bcd
+# Loading work.Bcd7seg_1
+# Loading work.Bcd7seg_0
+# Loading work.Controller_vlg_sample_tst
+# Loading work.Controller_vlg_check_tst
+# ** Warning: (vsim-3015) D:/ELEC373/Assigment_2/Controller/Controller.v(24): [PCDPC] - Port size (1 or 1) does not match connection size (3) for port 'start'. The port definition is at: D:/ELEC373/Assigment_2/Key/Key.v(6).
+# 
+#         Region: /Controller_vlg_vec_tst/i1/Keyinst
+# ** Warning: (vsim-3015) D:/ELEC373/Assigment_2/Controller/Controller.v(32): [PCDPC] - Port size (1 or 1) does not match connection size (3) for port 't'. The port definition is at: D:/ELEC373/Assigment_2/Time/Time.v(5).
+# 
+#         Region: /Controller_vlg_vec_tst/i1/Timeinst
+# ** Warning: (vsim-3015) D:/ELEC373/Assigment_2/Controller/Controller.v(43): [PCDPC] - Port size (1 or 1) does not match connection size (3) for port 'start'. The port definition is at: D:/ELEC373/Assigment_2/Random/Random.v(1).
+# 
+#         Region: /Controller_vlg_vec_tst/i1/Randominst
+# ** Warning: (vsim-3015) D:/ELEC373/Assigment_2/Controller/Controller.v(43): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'R'. The port definition is at: D:/ELEC373/Assigment_2/Random/Random.v(1).
+# 
+#         Region: /Controller_vlg_vec_tst/i1/Randominst
+# ** Warning: (vsim-3015) D:/ELEC373/Assigment_2/Controller/Controller.v(55): [PCDPC] - Port size (1 or 1) does not match connection size (3) for port 't'. The port definition is at: D:/ELEC373/Assigment_2/Number/Number.v(6).
+# 
+#         Region: /Controller_vlg_vec_tst/i1/Numberinst
+# Simulation passed !
+# ** Note: $finish    : D:/ELEC373/Assigment_2/Controller/simulation/modelsim/Waveform.vwf.vt(395)
+#    Time: 1 us  Iteration: 0  Instance: /Controller_vlg_vec_tst/tb_out
+# 1
+# Break in Module Controller_vlg_check_tst at D:/ELEC373/Assigment_2/Controller/simulation/modelsim/Waveform.vwf.vt line 395
+# Simulation Breakpoint: 1
+# Break in Module Controller_vlg_check_tst at D:/ELEC373/Assigment_2/Controller/simulation/modelsim/Waveform.vwf.vt line 395
+# MACRO D:\ELEC373\Assigment_2\Controller\simulation\modelsim\Waveform.vwf.do PAUSED at line 24

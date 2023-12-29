@@ -1,0 +1,86 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\ELEC373\Assigment_2\Random\simulation\modelsim
+vRandom
+IafSHNOOVb5DnK<G8KHoSV0
+VVMAbY_J_igdiR9DU;8f9B2
+Z1 dD:\ELEC373\Assigment_2\Random\simulation\modelsim
+w1613176467
+8D:/ELEC373/Assigment_2/Random/Random.v
+FD:/ELEC373/Assigment_2/Random/Random.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+o-vlog01compat -work work -O0
+n@random
+!i10b 1
+!s100 PBG`bzmDNUgChR^nR99D53
+!s85 0
+!s108 1613178668.164000
+!s107 D:/ELEC373/Assigment_2/Random/Random.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ELEC373/Assigment_2/Random|D:/ELEC373/Assigment_2/Random/Random.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/ELEC373/Assigment_2/Random -O0
+vRandom_vlg_check_tst
+!i10b 1
+!s100 =VFb]a;kd3BfK4mYn?3mk1
+Ikkdj:F>X_H43T?1O>UFA<0
+VEJl47S0BYfW9eA]F;:z];0
+R1
+Z3 w1613178654
+Z4 8D:/ELEC373/Assigment_2/Random/simulation/modelsim/Waveform.vwf.vt
+Z5 FD:/ELEC373/Assigment_2/Random/simulation/modelsim/Waveform.vwf.vt
+L0 61
+R2
+r1
+!s85 0
+31
+Z6 !s108 1613178686.748000
+Z7 !s107 D:/ELEC373/Assigment_2/Random/simulation/modelsim/Waveform.vwf.vt|
+Z8 !s90 -reportprogress|300|-work|work|D:/ELEC373/Assigment_2/Random/simulation/modelsim/Waveform.vwf.vt|
+!s101 -O0
+Z9 o-work work -O0
+n@random_vlg_check_tst
+vRandom_vlg_sample_tst
+!i10b 1
+!s100 RTbB38K[8;Vc]>>iOTPZ;1
+ISL]eaEB<DCZWVBf1?fKTB1
+VY1KO<MZghP^X5BQS<Aj2R1
+R1
+R3
+R4
+R5
+L0 29
+R2
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+n@random_vlg_sample_tst
+vRandom_vlg_vec_tst
+!i10b 1
+!s100 6X]Hz:_<=ldnL`MkD5Ol>1
+I3Yh1ZX:W26Q>DYYRjTO6L0
+VOFz:SjN_jh>8E4f>Bi>IP3
+R1
+R3
+R4
+R5
+L0 433
+R2
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+n@random_vlg_vec_tst

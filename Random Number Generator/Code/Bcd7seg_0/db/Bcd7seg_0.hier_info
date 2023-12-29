@@ -1,0 +1,18 @@
+|Bcd7seg_0
+A[0] => ~NO_FANOUT~
+A[1] => ~NO_FANOUT~
+A[2] => ~NO_FANOUT~
+A[3] => ~NO_FANOUT~
+test[0] <= <VCC>
+test[1] <= <GND>
+test[2] <= <VCC>
+test[3] <= <GND>
+hex4[0] <= <GND>
+hex4[1] <= <VCC>
+hex4[2] <= <GND>
+hex4[3] <= <GND>
+hex4[4] <= <VCC>
+hex4[5] <= <GND>
+hex4[6] <= <GND>
+
+

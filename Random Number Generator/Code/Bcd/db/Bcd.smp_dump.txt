@@ -1,0 +1,5 @@
+
+State Machine - |Bcd|r
+Name r.001 
+r.000 0 
+r.001 1 

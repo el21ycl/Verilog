@@ -1,0 +1,42 @@
+module Controller (
+      input clk,
+		input rst,
+		input Key_2 ,
+	   input Key_0 ,
+	   output [6:0] hex4 , //that is a count for single digits
+	   output [6:0] hex5   //that is a count for tens digits
+) ;
+
+
+
+
+
+
+
+
+
+
+       // Binary to Bcd module
+		Bcd Bcdinst (
+		  .clk          (clk),         //Used to connect clk
+		  .rst          (rst),         //Used to connect rst
+		  .R_b          (R_b),         //Used to connect input R_b
+		  .d_0          (d_0),         //Used to connect output d_0
+		  .d_1          (d_1)          //Used to connect output d_1
+		);
+
+
+      wire [3:0] d_0;         //Controller connection Bcd output
+		wire [3:0] d_1;
+
+		// 7 segment tens module
+		Bcd7seg_1 Bcd7seg_1inst_1 (
+		   .B (d_1), //Connect the output of the counter to the input of 7 segments
+			.hex5 (hex5)//Used to connect output hex5
+		);
+		
+		// 7 segment ones module
+		Bcd7seg_0 Bcd7seg_0inst_0 (
+		   .A (d_0), //Connect the output of the counter to the input of 7 segments
+			.hex4 (hex4)//Used to connect output hex4
+		);	

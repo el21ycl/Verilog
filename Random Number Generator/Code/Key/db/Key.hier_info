@@ -1,0 +1,30 @@
+|Key
+clk => Z[0]~reg0.CLK
+clk => Z[1]~reg0.CLK
+clk => Z[2]~reg0.CLK
+clk => Z[3]~reg0.CLK
+clk => start~reg0.CLK
+rst => start.OUTPUTSELECT
+rst => Z.OUTPUTSELECT
+rst => Z.OUTPUTSELECT
+rst => Z.OUTPUTSELECT
+rst => Z.OUTPUTSELECT
+Key_2 => always0.IN0
+Key_2 => start.OUTPUTSELECT
+Key_2 => Z.OUTPUTSELECT
+Key_2 => Z.OUTPUTSELECT
+Key_2 => Z.OUTPUTSELECT
+Key_2 => Z.OUTPUTSELECT
+Key_0 => always0.IN1
+Key_0 => Z.OUTPUTSELECT
+Key_0 => Z.OUTPUTSELECT
+Key_0 => Z.OUTPUTSELECT
+Key_0 => Z.OUTPUTSELECT
+Key_0 => start.OUTPUTSELECT
+start <= start~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Z[0] <= Z[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= Z[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= Z[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= Z[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
