@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;2-2-ServoDriver/ELEC5620M-Resources&apos;" deleteContents="false" description="Delete resource &apos;2-2-ServoDriver/ELEC5620M-Resources&apos;" element1="/2-2-ServoDriver/ELEC5620M-Resources" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1647481368419"/>&#x0A;<refactoring comment="Delete resource &apos;2-2-HPS_PrivateTimer/main.c&apos;" deleteContents="false" description="Delete resource &apos;2-2-HPS_PrivateTimer/main.c&apos;" element1="/2-2-HPS_PrivateTimer/main.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1647537170121"/>
-</session>
