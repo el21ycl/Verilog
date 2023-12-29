@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;3-2-ImageDisplay/PrivateTimer/PrivateTimer&apos; to &apos;PrivateTimer.c&apos;" description="Rename resource &apos;PrivateTimer&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="PrivateTimer/PrivateTimer" name="PrivateTimer.c" stamp="1652301866288" updateReferences="true"/>
+</session>
